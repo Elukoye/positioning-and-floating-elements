@@ -1,10 +1,112 @@
 /* styles.css */
 
-/* show all 'boxes' */
-* {
-  border: 1px solid red !important;
-}
-
 /* **************************************** basic styles */
 
-/* **************************************** etc */
+html {
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  font-size: 10px;
+}
+
+.fixed-nav-bar {
+  position: fixed;
+  width: 100%;
+}
+
+/* **************************************** top nav bar */
+
+#top-nav-bar {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(226, 226, 226);
+  height: 3.8rem;
+  padding-top: 0.4rem;
+  top: 0;
+}
+
+/* left section */
+
+#top-nav-bar .top-nav-left {
+  float: left;
+  padding-top: 0.8rem;
+  width: 33.3%;
+}
+
+#top-nav-bar .top-nav-left button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  float: left;
+}
+
+#top-nav-bar .top-nav-left button:first-child {
+  margin-left: 1.1rem;
+  margin-right: 0.7rem;
+}
+
+#top-nav-bar .top-nav-left button svg {;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+#top-nav-bar .top-nav-left .topic {
+  float: left;
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin-left: 2.3rem;
+  text-transform: uppercase;
+}
+
+/* centre section */
+
+#top-nav-bar .top-nav-centre {
+  float: left;
+  height: 2.65rem;
+  padding-top: 0.6rem;
+  text-align: center;
+  width: 33.3%;
+}
+
+#top-nav-bar .top-nav-centre svg {
+  height: 100%;
+}
+
+/* right section */
+
+#top-nav-bar .top-nav-right {
+  float: left;
+  width: 33.3%;
+}
+
+#top-nav-bar .top-nav-right button {
+  background-color: rgb(98, 136, 165);
+  border: 0.1rem solid rgb(50, 104, 145);
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  float: right;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.1rem;
+  margin-right: 0.5rem;
+  padding: 1rem 1.1rem 0.9rem 1.1rem;
+  text-transform: uppercase;
+}
+
+#top-nav-bar .top-nav-right button:first-child {
+  margin-right: 1.6rem
+}
+
+/* **************************************** bottom nav bar */
+
+#bottom-nav-bar {
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid rgb(226, 226, 226);
+  bottom: 0;
+  height: 3.8rem;
+}
+
+/* **************************************** main */
+
+main {
+  background-color: #eee;
+  height: 200rem;
+}
