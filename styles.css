@@ -95,15 +95,6 @@ html {
   margin-right: 1.6rem
 }
 
-/* **************************************** bottom nav bar */
-
-#bottom-nav-bar {
-  background-color: rgb(255, 255, 255);
-  border-top: 1px solid rgb(226, 226, 226);
-  bottom: 0;
-  height: 3.8rem;
-}
-
 /* **************************************** main */
 
 main {
@@ -113,7 +104,7 @@ main {
 
 .main-header{
   width:100%;
-  margin:0 auto;  
+  margin:0 auto;
 }
 
 .headline{
@@ -121,24 +112,24 @@ main {
 }
 
 .header-image img{
-  
+
   width:70%;
   margin-left:21.0rem ;
   margin-top:15rem;
-  margin-bottom:0.5rem; 
-  
- 
+  margin-bottom:0.5rem;
+
+
 }
 
 .image-text{
    width:80%;
-    
-  
-  
+
+
+
 }
 
 .image-text p{
- 
+
   font-size: 1.6rem;
   line-height: 1.9rem;
   color: #666;
@@ -147,7 +138,7 @@ main {
   margin-right:0.7rem;
   text-size-adjust: 100%;
   font-family:imperial,Georgia, 'Times New Roman', Times, serif
-  
+
 }
 
 .image-text a{
@@ -164,9 +155,9 @@ main {
   left:21rem;
   top:4rem;
   display:inline-block;
-  
- 
- 
+
+
+
 }
 
 .subheader-1 p{
@@ -203,14 +194,14 @@ main {
  bottom:1rem;
 
 
- 
+
 }
 
 .subheader-2-icons li {
   display:inline-block;
   position:relative;
-  bottom:0.5rem; 
-  
+  bottom:0.5rem;
+
 }
 
 .subheader-2-icons a{
@@ -219,6 +210,27 @@ main {
 .subheader-2-icons button{
   border:none;
   margin-left:1.5rem;
-  
+
 }
 
+/* **************************************** article */
+
+#body {
+  background-color: aquamarine;
+  margin: 3.8rem 9%;
+}
+
+#article-content {
+  background-color: pink;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+/* **************************************** bottom nav bar */
+
+#bottom-nav-bar {
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid rgb(226, 226, 226);
+  bottom: 0;
+  height: 3.8rem;
+}
