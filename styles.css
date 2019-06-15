@@ -121,6 +121,7 @@ article#body {
 
 .article-image img {
   width: 100%;
+  
 }
 
 .article-image p.image-description {
@@ -129,6 +130,7 @@ article#body {
   line-height: 1.75rem;
   margin-top: 0.3rem;
   max-width: 72rem;
+ 
 }
 
 .article-image p.image-attribution {
@@ -136,6 +138,7 @@ article#body {
   font-size: 1.3rem;
   line-height: 1.75rem;
   margin-top: 0.5rem;
+
 }
 
 /* **************************************** article content*/
@@ -330,11 +333,36 @@ aside#sign-up button {
   margin-top: 0.3rem;
   transform: rotate(-90deg);
 }
+
+.paragraph-link a{
+  color:#326891;
+  text-decoration: underline;
+
+}
 strong{
   color:black;
   font-weight:700;
- 
 }
+
+iframe{
+  margin-bottom: 0.9rem;
+}
+
+.video-text{
+  font-family:Arial, Helvetica, sans-serif;
+  color:#666;
+  font-size: 1.45rem;
+  /* margin-bottom:2.5rem; */
+  line-height: 1.25rem;
+}
+
+.video-credit{
+  color:#999;
+  font-size:1.1rem;
+  letter-spacing:0.02rem;
+  line-height: 1.25rem;
+}
+
 .image-telescope img{
   position: relative;
   top: 0px;
@@ -348,6 +376,21 @@ strong{
 .image-telescope-text{
   /* background-color: aquamarine; */
   color: #666;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.25rem;
+  /* margin-bottom: 0.5rem; */
+
+}
+.image-telescope-text-1{
+  color: #999;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
+
+#paragraph{
+  margin-top:5rem;
 }
 
 .bottom-text{
