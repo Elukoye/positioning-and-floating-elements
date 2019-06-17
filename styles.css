@@ -100,6 +100,8 @@ article#body {
   position: relative;
 }
 
+/* article header */
+
 .title {
   margin: 0 auto;
   max-width: 60rem;
@@ -115,30 +117,77 @@ article#body {
   padding-top: 5rem;
 }
 
-.article-image {
+/* article media */
+
+.article-media {
   font-family: 'Times New Roman', Times, serif;
+  margin: 3rem 0;
 }
 
-.article-image img {
+.article-media h1 {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+
+}
+
+.article-media img.header-image {
   width: 100%;
-  
 }
 
-.article-image p.image-description {
-  color: rgb(51, 51, 51);
+/*.article-media img.article-image {
+
+}
+
+.article-media img.article-video {
+
+}*/
+
+.article-media .media-description {
+  color: rgb(102, 102, 102);
   font-size: 1.5rem;
   line-height: 1.75rem;
   margin-top: 0.3rem;
   max-width: 72rem;
- 
 }
 
-.article-image p.image-attribution {
+.article-media .media-attribution {
   color: rgb(136, 136, 136);
   font-size: 1.3rem;
   line-height: 1.75rem;
   margin-top: 0.5rem;
+}
 
+section.inflation-theory {
+  width: 78rem;
+  margin: 0 auto;
+}
+
+section.inflation-theory-content {
+  width: 100%;
+  height: 68rem;
+  background: url(assets/inflation.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 1rem 0;
+}
+
+section.inflation-theory-content p {
+  display: inline-block;
+  width: 23%;
+  padding-left: 1.3rem;
+  margin: 14rem 0 3rem 0;
+  color: rgb(0, 0, 0);
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.7rem;
+  vertical-align: top;
+}
+
+section.inflation-theory-content p span {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 /* **************************************** article content*/
@@ -334,64 +383,7 @@ aside#sign-up button {
   transform: rotate(-90deg);
 }
 
-.paragraph-link a{
-  color:#326891;
-  text-decoration: underline;
-
-}
-strong{
-  color:black;
-  font-weight:700;
-}
-
-iframe{
-  margin-bottom: 0.9rem;
-}
-
-.video-text{
-  font-family:Arial, Helvetica, sans-serif;
-  color:#666;
-  font-size: 1.45rem;
-  /* margin-bottom:2.5rem; */
-  line-height: 1.25rem;
-}
-
-.video-credit{
-  color:#999;
-  font-size:1.1rem;
-  letter-spacing:0.02rem;
-  line-height: 1.25rem;
-}
-
-.image-telescope img{
-  position: relative;
-  top: 0px;
-  left: 0.2rem;
-  height: 40.0781rem;
-  width: 60rem;
-  pointer-events: none;
-  margin-bottom: 1rem;
-} 
-
-.image-telescope-text{
-  /* background-color: aquamarine; */
-  color: #666;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.25rem;
-  /* margin-bottom: 0.5rem; */
-
-}
-.image-telescope-text-1{
-  color: #999;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.25rem;
-  line-height: 1.25rem;
-}
-
-#paragraph{
-  margin-top:5rem;
-}
+/* ****************************************  */
 
 .bottom-text{
   /* background-color: aqua; */
