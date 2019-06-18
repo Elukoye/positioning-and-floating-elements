@@ -1,19 +1,35 @@
 /* styles.css */
+
 /* no responsive design. we have replicated the site at 1280px wide */
+
 /* **************************************** basic styles */
 html {
   font-family: 'PT Serif', serif;
   font-size: 10px;
 }
 
+p {
+  color: rgb(51, 51, 51);
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: rgb(50, 104, 145);
+}
+
+/* **************************************** fixed nav bars */
+
 .fixed-nav-bar {
+  height: 3.8rem;
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 
 /* **************************************** button */
-button.blue {
+.blue {
   background-color: rgb(98, 136, 165);
   border: 0.1rem solid rgb(50, 104, 145);
   border-radius: 3px;
@@ -29,39 +45,38 @@ button.blue {
 }
 
 /* **************************************** top nav bar */
-#top-nav-bar {
+.top-nav {
   background-color: rgb(255, 255, 255);
   border-bottom: 1px solid rgb(226, 226, 226);
-  height: 3.8rem;
   padding-top: 0.4rem;
   top: 0;
 }
 
 /* left section */
-#top-nav-bar .top-nav-left {
+.top-nav-left {
   float: left;
   padding-top: 0.8rem;
   width: 33.3%;
 }
 
-#top-nav-bar .top-nav-left button {
+.top-nav-left button {
   background-color: #fff;
   border: none;
   cursor: pointer;
   float: left;
 }
 
-#top-nav-bar .top-nav-left button:first-child {
+.top-nav-left button:first-child {
   margin-left: 1.1rem;
   margin-right: 0.7rem;
 }
 
-#top-nav-bar .top-nav-left button svg {
+.top-nav-left svg {
   height: 1.6rem;
   width: 1.6rem;
 }
 
-#top-nav-bar .top-nav-left .topic {
+.top-nav-left .topic {
   float: left;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.375rem;
@@ -71,7 +86,7 @@ button.blue {
 }
 
 /* centre section */
-#top-nav-bar .top-nav-centre {
+.top-nav-center {
   float: left;
   height: 2.65rem;
   padding-top: 0.6rem;
@@ -79,23 +94,22 @@ button.blue {
   width: 33.3%;
 }
 
-#top-nav-bar .top-nav-centre svg {
+.top-nav-center svg {
   height: 100%;
 }
 
 /* right section */
-#top-nav-bar .top-nav-right {
+.top-nav-right {
   float: left;
   width: 33.3%;
 }
 
-#top-nav-bar .top-nav-right button:first-child {
-  margin-right: 1.6rem
+.top-nav-right button:first-child {
+  margin-right: 1.6rem;
 }
 
 /* **************************************** main */
-article#body {
-  height: 100%;
+.body {
   margin: 3.8rem 9%;
   position: relative;
 }
@@ -115,79 +129,6 @@ article#body {
   max-width: 45rem;
   padding-bottom: 2rem;
   padding-top: 5rem;
-}
-
-/* article media */
-
-.article-media {
-  font-family: 'Times New Roman', Times, serif;
-  margin: 3rem 0;
-}
-
-.article-media h1 {
-  color: rgb(0, 0, 0);
-  font-size: 2rem;
-  line-height: 2.4rem;
-  font-weight: 700;
-
-}
-
-.article-media img.header-image {
-  width: 100%;
-}
-
-/*.article-media img.article-image {
-
-}
-
-.article-media img.article-video {
-
-}*/
-
-.article-media .media-description {
-  color: rgb(102, 102, 102);
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-  margin-top: 0.3rem;
-  max-width: 72rem;
-}
-
-.article-media .media-attribution {
-  color: rgb(136, 136, 136);
-  font-size: 1.3rem;
-  line-height: 1.75rem;
-  margin-top: 0.5rem;
-}
-
-section.inflation-theory {
-  width: 78rem;
-  margin: 0 auto;
-}
-
-section.inflation-theory-content {
-  width: 100%;
-  height: 68rem;
-  background: url(assets/inflation.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  margin: 1rem 0;
-}
-
-section.inflation-theory-content p {
-  display: inline-block;
-  width: 23%;
-  padding-left: 1.3rem;
-  margin: 14rem 0 3rem 0;
-  color: rgb(0, 0, 0);
-  font-size: 1.4rem;
-  font-weight: 300;
-  line-height: 1.7rem;
-  vertical-align: top;
-}
-
-section.inflation-theory-content p span {
-  text-transform: uppercase;
-  font-weight: 700;
 }
 
 /* **************************************** article content*/
@@ -228,18 +169,30 @@ section.inflation-theory-content p span {
   width: 30%;
 }
 
-.article-content .social-buttons {
+.comments-button {
+  float: left;
+}
+
+.comments-button button {
+  width: 33rem;
+}
+
+.social-buttons {
   float: right;
   height: 100%;
   width: 20rem;
 }
 
-.article-content .social-buttons li {
+.social-buttons ul {
+  float: right;
+}
+
+.social-buttons li {
   display: inline-block;
   margin-left: 1rem;
 }
 
-.article-content .social-buttons svg.round {
+.social-buttons .round {
   background-color: rgb(238, 238, 238);
   border: 1px solid rgb(238, 238, 238);
   border-radius: 50%;
@@ -250,19 +203,86 @@ section.inflation-theory-content p span {
   width: 1.5rem;
 }
 
-.article-content .social-buttons svg.bookmark {
+.social-buttons .bookmark {
   height: 2.5rem;
 }
 
-.article-content p {
-  font-size: 2rem;
-  line-height: 3rem;
-  color: rgb(51, 51, 51);
-  margin-bottom: 1.5rem;
+.article-heading {
+  font-weight: bold;
 }
 
-.article-content p.article-heading {
-  font-weight: bold;
+/* article media */
+
+.article-media {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 3rem 0;
+}
+
+.article-media h1 {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+
+.header-image {
+  width: 100%;
+}
+
+.media-description {
+  color: rgb(102, 102, 102);
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  margin-top: 0.3rem;
+  max-width: 72rem;
+}
+
+.media-attribution {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(136, 136, 136);
+  font-size: 1.3rem;
+  line-height: 1.75rem;
+  margin-top: 0.5rem;
+}
+
+.media-attribution a {
+  color: rgb(136, 136, 136);
+  text-decoration: none;
+}
+
+.media-attribution a:hover {
+  text-decoration: underline;
+}
+
+.inflation-theory {
+  margin: 0 auto;
+  width: 78rem;
+}
+
+.inflation-theory-content {
+  background: url(assets/inflation.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 68rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.inflation-theory-content p {
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.7rem;
+  margin: 14rem 0 3rem 0;
+  padding-left: 1.3rem;
+  vertical-align: top;
+  width: 23%;
+}
+
+.inflation-theory-content span {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /* **************************************** article aside */
@@ -272,41 +292,40 @@ aside {
   width: 15%;
 }
 
-aside#editors-picks {
+.editors-picks {
   font-size: 1.4rem;
   font-weight: 700;
-  top: 150rem;
+  top: 200rem;
 }
 
-aside#editors-picks h1 {
+.editors-picks h1 {
   border-bottom: 1px solid rgb(226, 226, 226);
   color: rgb(0, 0, 0);
   line-height: 1.4rem;
   padding: 1.6rem 0;
-  top: 150rem;
 }
 
-aside#editors-picks li {
+.editors-picks li {
   border-bottom: 1px solid rgb(226, 226, 226);
   line-height: 1.7rem;
   padding: 1.6rem 0;
 }
 
-aside#editors-picks li a {
+.editors-picks li a {
   color: rgb(100, 100, 100);
   text-decoration: none;
 }
 
-aside#editors-picks li a:hover {
+.editors-picks li a:hover {
   text-decoration: underline;
 }
 
-aside#sign-up {
-  bottom: 150rem;
+.sign-up {
+  bottom: 825rem;
   font-family: Arial, sans-serif;
 }
 
-aside#sign-up h1 {
+.sign-up h1 {
   color: rgb(0, 0, 0);
   font-size: 1.8rem;
   font-weight: 700;
@@ -314,7 +333,7 @@ aside#sign-up h1 {
   margin-bottom: 0.5rem;
 }
 
-aside#sign-up p {
+.sign-up p {
   color: rgb(102, 102, 102);
   font-size: 1.3rem;
   font-weight: 500;
@@ -322,7 +341,7 @@ aside#sign-up p {
   margin-bottom: 1rem;
 }
 
-aside#sign-up button {
+.sign-up button {
   width: 100%;
 }
 
@@ -383,74 +402,54 @@ aside#sign-up button {
   transform: rotate(-90deg);
 }
 
-/* ****************************************  */
-
-.bottom-text{
-  /* background-color: aqua; */
-  font-family:Arial, Helvetica, sans-serif;
-  color:#999;
-  font-size: 1.2rem;
-  margin-bottom:2.5rem;
-}
-.bottom-text a{
-  text-decoration:none;
-  color:#999;
-  font-size: 1.2rem;
-
-}
-
 /* **************************************** bottom-grid */
 
-.bottom-grid-container{
-  display:inline-block;
-  height:15rem;
-  width:27rem;
-  margin:0.75rem;
- 
-}
-
-.header h2{
-  margin-left:1rem;
+.header h2 {
+  margin-bottom: 0.8rem;
+  margin-left: 1rem;
   margin-top: 2.5rem;
-  margin-bottom:0.8rem;
-  
 }
-.header a{
+.header a {
+  color: #333;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
   font-weight: 700;
-  font-size:1.5rem;
-  color:#333;
   text-decoration: none;
 }
 
-.bottom-grid-container img{
-  height:15rem;
-  width:27rem;
-  
+.bottom-grid-container {
+  display: inline-block;
+  height: 15rem;
+  margin: 0.75rem;
+  width: 27rem;
 }
-#caption{
+
+.bottom-grid-container img {
+  height: 15rem;
+  width: 27rem;
+}
+#caption {
+  color: rgb(153, 153, 153);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 0.4rem;
+  margin-top: 0.4rem;
   text-align: end;
-  color:rgb(153, 153, 153);
-  margin-top:0.4rem;
-  margin-bottom:0.4rem;
-  font-family:Georgia, 'Times New Roman', Times, serif;
 }
-hr{
-  display:inherit;
-  color:black;
- 
+hr {
+  color: black;
+  display: inherit;
 }
-.bottom-image-description a{
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-weight:500;
+.bottom-image-description a {
   color: rgb(18, 18, 18);
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.5rem;
+  font-weight: 500;
   line-height: 2.2rem;
   text-decoration: none;
 }
-/* 
+/*
 .bottom-image-description time{
- 
+
   font-family: helvetica, arial, sans-serif;
   font-weight: 500;
   font-size: 0.75rem;
@@ -460,25 +459,25 @@ hr{
 } */
 /* **************************************** bottom-menu */
 
-.main-bottom-menu{
- margin-top:0.5rem;
+.main-bottom-menu {
+  margin-top: 0.5rem;
 }
 
-.bottom-menu-heading svg{
+.bottom-menu-heading svg {
   display: block;
   height: 44px;
   width: 184px;
 }
 
-.bottom-menu-anchor{
+.bottom-menu-anchor {
+  bottom: 3rem;
+  display: inline;
+  left: 76.55rem;
   /* background-color: aqua; */
-  position:relative;
-  left:76.55rem;
-  bottom:3rem;
-  display:inline;
+  position: relative;
 }
 
-.bottom-menu-heading a{
+.bottom-menu-heading a {
   color: rgb(98, 136, 165);
   font-family: nyt-franklin;
   font-size: 11px;
@@ -488,43 +487,41 @@ hr{
   text-decoration: none;
 }
 
-.bottom-menu-items{
-  padding: 1em;
-  -moz-column-count: 5;
-  -moz-column-gap: 1em;
+.bottom-menu-items {
   -webkit-column-count: 5;
+     -moz-column-count: 5;
+          column-count: 5;
   -webkit-column-gap: 1em;
-  column-count: 5;
-  column-gap: 1em;
+     -moz-column-gap: 1em;
+          column-gap: 1em;
+  padding: 1em;
 }
-.bottom-menu-1{
-  display:inline-block;
+.bottom-menu-1 {
+  display: inline-block;
   vertical-align: top;
-  width:25%;
+  width: 25%;
 }
 
-.bottom-menu-heading h3{
- 
+.bottom-menu-heading h3 {
   color: rgb(51, 51, 51);
+  font-family: nyt-franklin;
   font-size: 13px;
   font-weight: 700;
-  font-family: nyt-franklin;
   height: 25px;
   line-height: 15px;
+  margin: 0;
   text-transform: uppercase;
   width: 150px;
-  margin: 0px;
 }
-.bottom-links a{
-  text-decoration:none;
+.bottom-links a {
   color: rgb(0, 0, 0);
   display: inline-block;
   font-family: nyt-franklin;
-  text-transform: capitalize;
-  width: 150px;
   font-size: 14px;
   font-weight: 500;
   height: 23px;
   line-height: 16px;
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 150px;
 }
-
