@@ -1,6 +1,9 @@
 /* styles.css */
 
-/* no responsive design. we have replicated the site at 1280px wide */
+/*
+There is no responsive design.
+we have replicated the site at 1280px wide.
+*/
 
 /* **************************************** basic styles */
 html {
@@ -19,16 +22,12 @@ a {
   color: rgb(50, 104, 145);
 }
 
-/* **************************************** fixed nav bars */
-
-.fixed-nav-bar {
-  height: 3.8rem;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+h1 {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
 }
 
-/* **************************************** button */
+/* **************************************** buttons */
 .blue {
   background-color: rgb(98, 136, 165);
   border: 0.1rem solid rgb(50, 104, 145);
@@ -44,7 +43,17 @@ a {
   text-transform: uppercase;
 }
 
-/* **************************************** top nav bar */
+/* **************************************** fixed nav bars */
+
+.fixed-nav-bar {
+  height: 3.8rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+/* top nav bar */
+
 .top-nav {
   background-color: rgb(255, 255, 255);
   border-bottom: 1px solid rgb(226, 226, 226);
@@ -52,7 +61,6 @@ a {
   top: 0;
 }
 
-/* left section */
 .top-nav-left {
   float: left;
   padding-top: 0.8rem;
@@ -85,7 +93,6 @@ a {
   text-transform: uppercase;
 }
 
-/* centre section */
 .top-nav-center {
   float: left;
   height: 2.65rem;
@@ -98,7 +105,6 @@ a {
   height: 100%;
 }
 
-/* right section */
 .top-nav-right {
   float: left;
   width: 33.3%;
@@ -108,14 +114,71 @@ a {
   margin-right: 1.6rem;
 }
 
+/* bottom nav bar */
+.bottom-nav {
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid rgb(0, 0, 0);
+  bottom: 0;
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  height: 3.8rem;
+  line-height: 1.7rem;
+}
+
+.bottom-nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.bottom-nav-left {
+  float: left;
+  height: 100%;
+  margin-left: 20%;
+  text-align: center;
+  width: 60%;
+}
+
+.bottom-nav-left p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+}
+
+.bottom-nav-right {
+  float: right;
+  height: 100%;
+  vertical-align: middle;
+  width: 20%;
+}
+
+.bottom-nav-right p {
+  float: left;
+  font-size: 1.5rem;
+  line-height: 3.8rem;
+  margin-right: 1.5rem;
+}
+
+.bottom-nav-right button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+}
+
+.bottom-nav-right button svg {
+  height: 2rem;
+  margin-top: 0.3rem;
+  transform: rotate(-90deg);
+}
+
 /* **************************************** main */
+
 .body {
   margin: 3.8rem 9%;
   position: relative;
 }
 
 /* article header */
-
 .title {
   margin: 0 auto;
   max-width: 60rem;
@@ -124,14 +187,14 @@ a {
 .title h1 {
   font-size: 4rem;
   font-style: italic;
-  font-weight: 700;
   line-height: 4.8rem;
   max-width: 45rem;
   padding-bottom: 2rem;
   padding-top: 5rem;
 }
 
-/* **************************************** article content*/
+/* **************************************** article */
+
 .article-content {
   margin: 5rem auto 10rem auto;
   max-width: 60rem;
@@ -219,9 +282,7 @@ a {
 }
 
 .article-media h1 {
-  color: rgb(0, 0, 0);
   font-size: 2rem;
-  font-weight: 700;
   line-height: 2.4rem;
 }
 
@@ -233,16 +294,14 @@ a {
   color: rgb(102, 102, 102);
   font-size: 1.5rem;
   line-height: 1.75rem;
-  margin-top: 0.3rem;
+  margin: 0.5rem 0;
   max-width: 72rem;
 }
 
 .media-attribution {
-  font-family: Arial, Helvetica, sans-serif;
   color: rgb(136, 136, 136);
   font-size: 1.3rem;
   line-height: 1.75rem;
-  margin-top: 0.5rem;
 }
 
 .media-attribution a {
@@ -285,8 +344,9 @@ a {
   text-transform: uppercase;
 }
 
-/* **************************************** article aside */
-aside {
+/* **************************************** article asides */
+.editors-picks,
+.sign-up {
   position: absolute;
   right: 0;
   width: 15%;
@@ -295,12 +355,11 @@ aside {
 .editors-picks {
   font-size: 1.4rem;
   font-weight: 700;
-  top: 200rem;
+  top: 185rem;
 }
 
 .editors-picks h1 {
   border-bottom: 1px solid rgb(226, 226, 226);
-  color: rgb(0, 0, 0);
   line-height: 1.4rem;
   padding: 1.6rem 0;
 }
@@ -321,14 +380,12 @@ aside {
 }
 
 .sign-up {
-  bottom: 825rem;
+  bottom: 690rem;
   font-family: Arial, sans-serif;
 }
 
 .sign-up h1 {
-  color: rgb(0, 0, 0);
   font-size: 1.8rem;
-  font-weight: 700;
   line-height: 2.4rem;
   margin-bottom: 0.5rem;
 }
@@ -345,183 +402,203 @@ aside {
   width: 100%;
 }
 
-/* **************************************** bottom nav bar */
-#bottom-nav-bar {
-  background-color: rgb(255, 255, 255);
-  border-top: 1px solid rgb(0, 0, 0);
-  bottom: 0;
-  color: rgb(0, 0, 0);
-  font-family: Arial, sans-serif;
-  height: 3.8rem;
-  line-height: 1.7rem;
-}
+/* **************************************** footer */
 
-#bottom-nav-bar a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
-
-#bottom-nav-left {
-  float: left;
-  height: 100%;
-  margin-left: 20%;
-  text-align: center;
-  width: 60%;
-}
-
-#bottom-nav-left p {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 3.8rem;
-}
-
-#bottom-nav-right {
-  float: right;
-  height: 100%;
-  vertical-align: middle;
-  width: 20%;
-}
-
-#bottom-nav-right p {
-  float: left;
-  font-size: 1.5rem;
-  line-height: 3.8rem;
-  margin-right: 1.5rem;
-}
-
-#bottom-nav-right button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  height: 100%;
-}
-
-#bottom-nav-right button svg {
-  height: 2rem;
-  margin-top: 0.3rem;
-  transform: rotate(-90deg);
-}
-
-/* **************************************** bottom-grid */
-
-.header h2 {
-  margin-bottom: 0.8rem;
-  margin-left: 1rem;
-  margin-top: 2.5rem;
-}
-.header a {
-  color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.bottom-grid-container {
-  display: inline-block;
-  height: 15rem;
-  margin: 0.75rem;
-  width: 27rem;
-}
-
-.bottom-grid-container img {
-  height: 15rem;
-  width: 27rem;
-}
-#caption {
-  color: rgb(153, 153, 153);
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-bottom: 0.4rem;
-  margin-top: 0.4rem;
-  text-align: end;
-}
-hr {
-  color: black;
-  display: inherit;
-}
-.bottom-image-description a {
-  color: rgb(18, 18, 18);
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.5rem;
-  font-weight: 500;
+.footer-section-heading {
+  font-size: 1.6rem;
   line-height: 2.2rem;
-  text-decoration: none;
+  font-family: Arial, sans-serif;
+  margin: 2rem 0;
 }
-/*
-.bottom-image-description time{
 
-  font-family: helvetica, arial, sans-serif;
+.footer-article-heading {
+  font-size: 1.7rem;
   font-weight: 500;
-  font-size: 0.75rem;
-  line-height: 1.25rem;
-  letter-spacing: 0.3px;
-  color: rgb(153, 153, 153);
-} */
-/* **************************************** bottom-menu */
-
-.main-bottom-menu {
-  margin-top: 0.5rem;
-}
-
-.bottom-menu-heading svg {
-  display: block;
-  height: 44px;
-  width: 184px;
-}
-
-.bottom-menu-anchor {
-  bottom: 3rem;
-  display: inline;
-  left: 76.55rem;
-  /* background-color: aqua; */
-  position: relative;
-}
-
-.bottom-menu-heading a {
-  color: rgb(98, 136, 165);
-  font-family: nyt-franklin;
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 11px;
+  line-height: 2.3rem;
   text-decoration: none;
 }
 
-.bottom-menu-items {
-  -webkit-column-count: 5;
-     -moz-column-count: 5;
-          column-count: 5;
-  -webkit-column-gap: 1em;
-     -moz-column-gap: 1em;
-          column-gap: 1em;
-  padding: 1em;
+.footer-section-heading a,
+.footer-article-heading a {
+  color: rgb(18, 18, 18);
+  text-decoration: none;
 }
-.bottom-menu-1 {
+
+.footer-section-heading a:hover,
+.footer-article-heading a:hover {
+  text-decoration: underline;
+}
+
+.main-footer {
+  width: 120rem;
+  margin: 0 auto 4rem auto;
+}
+
+.more-in-articles {
+  float: left;
+}
+
+.editors-pick-articles {
+  clear: left;
+  float: left;
+  border-top: 1px solid rgb(0, 0, 0);
+}
+
+.footer-articles {
+  vertical-align: top;
+  width: 85rem;
+  border-top: 1px solid #000;
+}
+
+.footer-articles article {
+  display: inline-block;
+  width: 27.17rem;
+  margin-right: 1.5rem;
+  margin-bottom: 4rem;
+  vertical-align: top;
+}
+
+.footer-articles article:nth-of-type(3n+3) {
+  margin-right: 0;
+}
+
+.footer-articles article figcaption {
+  float: right;
+  color: rgb(153, 153, 153);
+  font-size: 1rem;
+  line-height: 1.23rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+
+.footer-articles article h2 {
+  clear: both;
+}
+
+.footer-articles article time {
+  color: rgb(153, 153, 153);
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+.footer-articles img {
+  width: 100%;
+}
+
+.footer-articles a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* footer top aside */
+
+.footer-top-aside {
+  border-top: 1px solid #000;
+  float: right;
+  width: 31rem;
+}
+
+.footer-top-aside li {
+  padding: 1.5rem 0;
+  border-top: 1px solid rgb(226, 226, 226);
+}
+
+/* footer bottom */
+
+.footer-bottom {
+  clear: both;
+  width: 100%;
+  border-top: 2px solid rgb(226, 226, 226);
+  padding-top: 1rem;
+}
+
+.footer-bottom header {
+  margin-bottom: 1rem;
+}
+
+.footer-bottom header svg {
+  height: 2.65rem;
+}
+
+.footer-bottom header a {
+  margin-top: 1.5rem;
+  float: right;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.footer-bottom header a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom section {
+  clear: left;
   display: inline-block;
   vertical-align: top;
-  width: 25%;
+  width: 16%;
 }
 
-.bottom-menu-heading h3 {
-  color: rgb(51, 51, 51);
-  font-family: nyt-franklin;
-  font-size: 13px;
-  font-weight: 700;
-  height: 25px;
-  line-height: 15px;
-  margin: 0;
+.footer-bottom .footer-section-heading {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
   text-transform: uppercase;
-  width: 150px;
 }
-.bottom-links a {
+
+.footer-bottom li a {
   color: rgb(0, 0, 0);
-  display: inline-block;
-  font-family: nyt-franklin;
-  font-size: 14px;
-  font-weight: 500;
-  height: 23px;
-  line-height: 16px;
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  font-family: Arial, sans-serif;
   text-decoration: none;
-  text-transform: capitalize;
-  width: 150px;
+}
+
+.footer-bottom li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom .seperator {
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.bottom-nav-more {
+  border-right: 1px solid rgb(226, 226, 226);
+  margin-right: 1rem;
+}
+
+.footer-bottom .link-small a {
+  font-size: 1.2rem;
+}
+
+.footer-bottom .link-large a {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.link-large svg {
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.footer-nav {
+  font-family: Arial, sans-serif;
+  border-top: 1px solid rgb(226, 226, 226 );
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  margin-top: 2rem;
+}
+
+.footer-nav a {
+  color: rgb(153, 153, 153);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
 }
