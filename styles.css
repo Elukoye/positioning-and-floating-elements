@@ -1,10 +1,610 @@
 /* styles.css */
 
-/* show all 'boxes' */
-* {
-  border: 1px solid red !important;
-}
+/*
+There is no responsive design.
+we have replicated the site at 1280px wide.
+*/
 
 /* **************************************** basic styles */
+html {
+  font-family: 'PT Serif', serif;
+  font-size: 10px;
+}
 
-/* **************************************** etc */
+p {
+  color: rgb(51, 51, 51);
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: rgb(50, 104, 145);
+}
+
+h1, h2, h3 {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+
+/* **************************************** buttons */
+.blue {
+  background-color: rgb(98, 136, 165);
+  border: 0.1rem solid rgb(50, 104, 145);
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  float: right;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.1rem;
+  margin-right: 0.5rem;
+  padding: 1rem 1.1rem 0.9rem 1.1rem;
+  text-transform: uppercase;
+}
+
+/* **************************************** fixed nav bars */
+
+.fixed-nav-bar {
+  height: 3.8rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+/* top nav bar */
+
+.top-nav {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(226, 226, 226);
+  padding-top: 0.4rem;
+  top: 0;
+}
+
+.top-nav-left {
+  float: left;
+  padding-top: 0.8rem;
+  width: 33.3%;
+}
+
+.top-nav-left button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  float: left;
+}
+
+.top-nav-left button:first-child {
+  margin-left: 1.1rem;
+  margin-right: 0.7rem;
+}
+
+.top-nav-left svg {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.top-nav-left .topic {
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin-left: 2.3rem;
+  text-transform: uppercase;
+}
+
+.top-nav-center {
+  float: left;
+  height: 2.65rem;
+  padding-top: 0.6rem;
+  text-align: center;
+  width: 33.3%;
+}
+
+.top-nav-center svg {
+  height: 100%;
+}
+
+.top-nav-right {
+  float: left;
+  width: 33.3%;
+}
+
+.top-nav-right button:first-child {
+  margin-right: 1.6rem;
+}
+
+/* bottom nav bar */
+.bottom-nav {
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid rgb(0, 0, 0);
+  bottom: 0;
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  height: 3.8rem;
+  line-height: 1.7rem;
+}
+
+.bottom-nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.bottom-nav-left {
+  float: left;
+  height: 100%;
+  margin-left: 20%;
+  text-align: center;
+  width: 60%;
+}
+
+.bottom-nav-left p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+}
+
+.bottom-nav-right {
+  float: right;
+  height: 100%;
+  vertical-align: middle;
+  width: 20%;
+}
+
+.bottom-nav-right p {
+  float: left;
+  font-size: 1.5rem;
+  line-height: 3.8rem;
+  margin-right: 1.5rem;
+}
+
+.bottom-nav-right button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+}
+
+.bottom-nav-right button svg {
+  height: 2rem;
+  margin-top: 0.3rem;
+  transform: rotate(-90deg);
+}
+
+/* **************************************** main */
+
+.body {
+  margin: 3.8rem 9%;
+  position: relative;
+}
+
+/* article header */
+.title {
+  margin: 0 auto;
+  max-width: 60rem;
+}
+
+.title h1 {
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 4.8rem;
+  max-width: 45rem;
+  padding-bottom: 2rem;
+  padding-top: 5rem;
+}
+
+/* **************************************** article */
+
+.article-content {
+  margin: 5rem auto 10rem auto;
+  max-width: 60rem;
+}
+
+.article-content header {
+  color: rgb(51, 51, 51);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 3rem;
+}
+
+.article-content .byline {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.article-content .byline a {
+  color: rgb(51, 51, 51);
+  text-decoration: underline rgb(204, 204, 204);
+  text-decoration-style: solid;
+}
+
+.article-content .date-social {
+  height: 3rem;
+  margin-top: 3rem;
+}
+
+.article-content .published-date {
+  float: left;
+  font-size: 1.4rem;
+  font-weight: 500;
+  height: 100%;
+  line-height: 1.8rem;
+  width: 30%;
+}
+
+.comments-button {
+  float: left;
+}
+
+.comments-button button {
+  width: 33rem;
+}
+
+.social-buttons {
+  float: right;
+  height: 100%;
+  width: 20rem;
+}
+
+.social-buttons ul {
+  float: right;
+}
+
+.social-buttons li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.social-buttons .round {
+  background-color: rgb(238, 238, 238);
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+  height: 1.5rem;
+  line-height: 1.7rem;
+  padding: 0.5rem;
+  width: 1.5rem;
+}
+
+.social-buttons .bookmark {
+  height: 2.5rem;
+}
+
+.article-heading {
+  font-weight: bold;
+}
+
+/* article media */
+
+.article-media {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 3rem 0;
+}
+
+.article-media h2 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.header-image {
+  width: 100%;
+}
+
+.media-description {
+  color: rgb(102, 102, 102);
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  margin: 0.5rem 0;
+  max-width: 72rem;
+}
+
+.media-attribution {
+  color: rgb(136, 136, 136);
+  font-size: 1.3rem;
+  line-height: 1.75rem;
+}
+
+.media-attribution a {
+  color: rgb(136, 136, 136);
+  text-decoration: none;
+}
+
+.media-attribution a:hover {
+  text-decoration: underline;
+}
+
+.inflation-theory {
+  margin: 0 auto;
+  width: 78rem;
+}
+
+.inflation-theory-content {
+  background: url(assets/inflation.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 68rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.inflation-theory-content p {
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.7rem;
+  margin: 14rem 0 3rem 0;
+  padding-left: 1.3rem;
+  vertical-align: top;
+  width: 23%;
+}
+
+.inflation-theory-content span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* **************************************** article asides */
+.editors-picks,
+.sign-up {
+  position: absolute;
+  right: 0;
+  width: 15%;
+}
+
+.editors-picks {
+  font-size: 1.4rem;
+  font-weight: 700;
+  top: 185rem;
+}
+
+.editors-picks h2 {
+  border-bottom: 1px solid rgb(226, 226, 226);
+  line-height: 1.4rem;
+  padding: 1.6rem 0;
+}
+
+.editors-picks li {
+  border-bottom: 1px solid rgb(226, 226, 226);
+  line-height: 1.7rem;
+  padding: 1.6rem 0;
+}
+
+.editors-picks li a {
+  color: rgb(100, 100, 100);
+  text-decoration: none;
+}
+
+.editors-picks li a:hover {
+  text-decoration: underline;
+}
+
+.sign-up {
+  bottom: 690rem;
+  font-family: Arial, sans-serif;
+}
+
+.sign-up h2 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.sign-up p {
+  color: rgb(102, 102, 102);
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.sign-up button {
+  width: 100%;
+}
+
+/* **************************************** footer */
+
+.footer-section-heading {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-family: Arial, sans-serif;
+  margin: 2rem 0;
+}
+
+.footer-article-heading {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 2.3rem;
+  text-decoration: none;
+}
+
+.footer-section-heading a,
+.footer-article-heading a {
+  color: rgb(18, 18, 18);
+  text-decoration: none;
+}
+
+.footer-section-heading a:hover,
+.footer-article-heading a:hover {
+  text-decoration: underline;
+}
+
+.main-footer {
+  width: 120rem;
+  margin: 0 auto 4rem auto;
+}
+
+.more-in-articles {
+  float: left;
+}
+
+.editors-pick-articles {
+  clear: left;
+  float: left;
+  border-top: 1px solid rgb(0, 0, 0);
+}
+
+.footer-articles {
+  vertical-align: top;
+  width: 85rem;
+  border-top: 1px solid #000;
+}
+
+.footer-articles article {
+  display: inline-block;
+  width: 27.17rem;
+  margin-right: 1.5rem;
+  margin-bottom: 4rem;
+  vertical-align: top;
+}
+
+.footer-articles article:nth-of-type(3n+3) {
+  margin-right: 0;
+}
+
+.footer-articles article figcaption {
+  float: right;
+  color: rgb(153, 153, 153);
+  font-size: 1rem;
+  line-height: 1.23rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+
+.footer-articles article h3 {
+  clear: both;
+}
+
+.footer-articles article time {
+  color: rgb(153, 153, 153);
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+.footer-articles img {
+  width: 100%;
+}
+
+.footer-articles a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* footer top aside */
+
+.footer-top-aside {
+  border-top: 1px solid #000;
+  float: right;
+  width: 31rem;
+}
+
+.footer-top-aside li {
+  padding: 1.5rem 0;
+  border-top: 1px solid rgb(226, 226, 226);
+}
+
+/* footer bottom */
+
+.footer-bottom {
+  clear: both;
+  width: 100%;
+  border-top: 2px solid rgb(226, 226, 226);
+  padding-top: 1rem;
+
+}
+
+.footer-bottom .footer-header {
+  margin-bottom: 1rem;
+}
+
+.footer-bottom .footer-header .logo {
+  display: inline-block;
+}
+
+.footer-bottom .footer-header svg {
+  height: 2.65rem;
+}
+
+.footer-bottom .footer-header .home-page-link {
+  margin-top: 1.5rem;
+  float: right;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.footer-bottom .footer-header a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom section {
+  clear: both;
+  display: inline-block;
+  vertical-align: top;
+  width: 16%;
+}
+
+.footer-bottom .footer-section-heading {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+
+}
+
+.footer-bottom li a {
+  color: rgb(0, 0, 0);
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+}
+
+.footer-bottom li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom .seperator {
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.bottom-nav-more {
+  border-right: 1px solid rgb(226, 226, 226);
+  margin-right: 1rem;
+}
+
+.footer-bottom .link-small a {
+  font-size: 1.2rem;
+}
+
+.footer-bottom .link-large a {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.link-large svg {
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.footer-nav {
+  font-family: Arial, sans-serif;
+  border-top: 1px solid rgb(226, 226, 226 );
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  margin-top: 2rem;
+}
+
+.footer-nav a {
+  color: rgb(153, 153, 153);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
