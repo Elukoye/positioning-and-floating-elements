@@ -22,7 +22,7 @@ a {
   color: rgb(50, 104, 145);
 }
 
-h1 {
+h1, h2, h3 {
   color: rgb(0, 0, 0);
   font-weight: 700;
 }
@@ -281,7 +281,7 @@ h1 {
   margin: 3rem 0;
 }
 
-.article-media h1 {
+.article-media h2 {
   font-size: 2rem;
   line-height: 2.4rem;
 }
@@ -358,7 +358,7 @@ h1 {
   top: 185rem;
 }
 
-.editors-picks h1 {
+.editors-picks h2 {
   border-bottom: 1px solid rgb(226, 226, 226);
   line-height: 1.4rem;
   padding: 1.6rem 0;
@@ -384,7 +384,7 @@ h1 {
   font-family: Arial, sans-serif;
 }
 
-.sign-up h1 {
+.sign-up h2 {
   font-size: 1.8rem;
   line-height: 2.4rem;
   margin-bottom: 0.5rem;
@@ -471,7 +471,7 @@ h1 {
   margin-bottom: 0.2rem;
 }
 
-.footer-articles article h2 {
+.footer-articles article h3 {
   clear: both;
 }
 
@@ -512,21 +512,22 @@ h1 {
   width: 100%;
   border-top: 2px solid rgb(226, 226, 226);
   padding-top: 1rem;
- 
+
 }
 
-.footer-bottom header {
+.footer-bottom .footer-header {
   margin-bottom: 1rem;
 }
-/* 
-.footer-headline svg{
- background-color:aqua;
-} */
-.footer-bottom header svg {
+
+.footer-bottom .footer-header .logo {
+  display: inline-block;
+}
+
+.footer-bottom .footer-header svg {
   height: 2.65rem;
 }
 
-.footer-bottom header a {
+.footer-bottom .footer-header .home-page-link {
   margin-top: 1.5rem;
   float: right;
   font-family: Arial, sans-serif;
@@ -534,12 +535,12 @@ h1 {
   text-decoration: none;
 }
 
-.footer-bottom header a:hover {
+.footer-bottom .footer-header a:hover {
   text-decoration: underline;
 }
 
 .footer-bottom section {
-  clear: left;
+  clear: both;
   display: inline-block;
   vertical-align: top;
   width: 16%;
